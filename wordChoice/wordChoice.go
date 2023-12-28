@@ -1,12 +1,9 @@
 package wordChoice
-import (
-  //"fmt"
-  "math/rand"
-)
+import "math/rand"
 
-// Returns a random word from wordlist
-func Word() string {
+// Returns a random word from the wordlist
 // Wordlist from: https://www.thefreedictionary.com/5-letter-words.htm
+func Word() string {
   wordlist := []string{
       "abbey",
       "about",
@@ -1009,6 +1006,7 @@ func Word() string {
       "yours",
       "youth",
   }
+  // Random word selected from wordlist and returned
   word := wordlist[rand.Intn(len(wordlist))]
   return word
 }
