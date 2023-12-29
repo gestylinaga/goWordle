@@ -19,7 +19,6 @@ func displayResults(guesses int, guessedList []string) {
     fmt.Println(guessedList[i])
     fmt.Printf("\033[0m") // Text color reset
   }
-  fmt.Println("\033[0m")
 }
 
 // Main game function
@@ -39,7 +38,6 @@ func main() {
   // Game loop
   for {
     fmt.Println("Your guess?")
-    fmt.Println("\033[0m") // Text color reset
 
     // Reading user input
     scanner := bufio.NewScanner(os.Stdin)
