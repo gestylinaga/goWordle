@@ -54,7 +54,6 @@ func main() {
       guesses -= 1
       guessed = checkWord.Check(word, guess)
       guessedList = append(guessedList, guessed)
-
     }
     // Displays game state: Guesses left and past guesses
     displayResults(guesses, guessedList)

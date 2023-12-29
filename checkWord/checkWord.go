@@ -19,18 +19,16 @@ func Check(word string, guess string) string {
     if strings.ToLower(splitGuess[i]) == strings.ToLower(splitWord[i]) {
       upper := strings.ToUpper(splitGuess[i])
       tempC = fmt.Sprintf("\033[92m%v ", upper) // green
-      tempGuess = append(tempGuess, tempC)
       // Color yellow for correct letter only
     } else if slices.Contains(splitWord, c) {
       upper := strings.ToUpper(splitGuess[i])
       tempC = fmt.Sprintf("\033[93m%v ", upper) // yellow
-      tempGuess = append(tempGuess, tempC)
       // Color reset (white) for no match
     } else {
       upper := strings.ToUpper(splitGuess[i])
       tempC = fmt.Sprintf("\033[0m%v ", upper) // text color reset
-      tempGuess = append(tempGuess, tempC)
     }
+    tempGuess = append(tempGuess, tempC)
   }
 
   // Temporary slice of colored strings joined and returned
