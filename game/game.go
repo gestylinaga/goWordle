@@ -13,16 +13,25 @@ import (
 
 // Function to display game state info
 func displayResults(guesses int, guessedList []string) {
+  fmt.Printf("\n")
   fmt.Printf("Guesses left: %d\n", guesses)
   fmt.Println("Past guesses:")
   for i := 0; i < len(guessedList); i++{
     fmt.Println(guessedList[i])
     fmt.Printf("\033[0m") // Text color reset
   }
+  fmt.Printf("\n")
 }
 
 // Main game function
 func main() {
+  fmt.Printf(`
+             _ _ _           _ _     
+     ___ ___| | | |___ ___ _| | |___ 
+    | . | . | | | | . |  _| . | | -_|
+    |_  |___|_____|___|_| |___|_|___|
+    |___|                            
+  ` + "\n")
   fmt.Println("Wordle written in Go! goWordle!")
   fmt.Println("\nGuess the 5 letter word, in 6 tries!")
   fmt.Println("\033[93mLetters in Yellow are correct, BUT in the wrong place")
