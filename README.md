@@ -1,11 +1,10 @@
-# goWordle!
+# go🇼ordle!
+Wordle in the Terminal...in Go == goWordle!
 
-Wordle in the Terminal...in Go
-
-A rewrite of [terminal_wordle](https://github.com/gestylinaga/terminal_wordle)
+A rewrite of [🐍 terminal_wordle](https://github.com/gestylinaga/terminal_wordle)
 using the Go programming language.
 
-To run:
+## ✨ Usage
 ```sh
 ./goWordle
 ```
